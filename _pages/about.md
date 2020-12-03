@@ -3,7 +3,7 @@ title: "About"
 layout: single
 permalink : /about/
 header:
-    image: "/assets/img/waka-kenya2.jpg"
+    image: "/assets/img/splash/sp3.jpg"
 
 classes: wide
 ---
