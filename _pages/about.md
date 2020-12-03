@@ -12,4 +12,4 @@ kam2:
     btn_class: "btn--primary"
 ---
 {% include feature_row id="intro2" type="center" %}
-{% include feature_row id="kam2" type="center" %}
+{% include feature_row id="kam2" type="left"%}
