@@ -4,7 +4,7 @@ permalink: /events/
 author_profile: false
 
 header:
-  image: "/assets/img/splash/sp3.jpg"
+  image: "/assets/img/splash/sp5.jpg"
 intro: 
   - excerpt: '**Events**'
 kam:

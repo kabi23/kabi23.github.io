@@ -2,7 +2,7 @@
 layout: single
 permalink : /about/
 header:
-    image: "/assets/img/splash/sp3.jpg"
+    image: "/assets/img/splash/sp5.jpg"
 intro2: 
   - excerpt: '**ABOUT**'
     url: "#test"
