@@ -70,9 +70,9 @@ Mbed enabled module such as the Multitech mDot used in this work can be programm
 
 ## Experiment Results
 - measured various distances - 4 measurements per distance, (**MB1010 limit 646cm**), as shown in Figure 6 below.
-{% include figure image_path="assets/img/mb/mb9.PNG" alt="*Fig 6: Actual distance - Measured distance dataframe*" caption="*Fig 6: Actual distance - Measured distance dataframe*" %}
+{% include figure image_path="assets/img/mb/mb9.PNG" alt="*Fig 6: Actual distance (CM) - Measured distance dataframe (CM)*" caption="*Fig 6: Actual distance (CM) - Measured distance dataframe (CM)*" %}
 - Plot (Measured distance aganist Actual distance)
-{% include figure image_path="assets/img/mb/mb11.PNG" alt="*Fig 7: Actual distance - Measured distance plot*" caption="*Fig 7: Actual distance - Measured distance plot*" %}
+{% include figure image_path="assets/img/mb/mb11.PNG" alt="*Fig 7: Actual distance (CM) - Measured distance plot (CM)*" caption="*Fig 7: Actual distance (CM) - Measured distance plot (CM)*" %}
 
 ## Results/Conclusion
 High precision and accuracy Ultrasonic sensor according to the data collected.
