@@ -246,6 +246,7 @@ defaults:
   - scope:
       path: ""
       type: posts
+      classes: wide
     values:
       layout: single
       author_profile: true

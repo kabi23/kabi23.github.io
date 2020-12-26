@@ -94,5 +94,4 @@ command : `nohup python ttn_to_db.py`
 
 ## Acknowledgements
 Dr Ciira Wa Maina - Director, Centre for Data Science abnd Artificial Intelligence (DSAIL) - Dedan Kimathi University of Technology
-.......
 
