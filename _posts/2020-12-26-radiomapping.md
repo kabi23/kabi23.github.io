@@ -15,12 +15,9 @@ The robust operation and efficient deployment of many IoT systems rely on the de
 The LoRaWAN gateway, also known as the concentrator, is used to relay data packets between the end devices (nodes) and the network server via the internet. It communicates over multi-channels with multi-spreading factors (SF). With this technique, nodes communicate with the gateway using different channels and data-rates (DR) without pre-negotiation and enables the gateway to accommodate about 10000 end devices at a go.
 ## Sampled Locations
 The map below shows all sample locations at Ol-pejeta conservancy and their RSSI values.
-
 {% include figure image_path="assets/img/radio/pp2.PNG" alt="*Fig 3: Radio mapping sample locations*" caption="*Fig 3: Radio mapping sample locations*" %}
-
 We deployed 3 devices (mdot1, mdot2, mdot3 (mdot-named after the Multitech mDot)) at various points within the conservancy. The devices and gateways were already connected to The Things Network and the network server was relaying radio propagation data (RSSI values for each device at five diffrent locations) to an InfluxDB10 database for storage, awaiting processing. 
 {% include figure image_path="assets/img/radio/pp5.PNG" alt="*Fig 4: Radio propagation data (highlighted - signal properties)*" caption="*Fig 4: Radio propagation data (highlighted - signal properties)*" %}
-
 Table below shows the The Mean RSSI (in dBm) for the Five (5) Test Locations for each Gateway.
 {% include figure image_path="assets/img/radio/pp4.PNG" alt="*Fig 5: The Mean RSSI (in dBm) for the Five (5) Test Locations for each Gateway*" caption="*Fig 5: The Mean RSSI (in dBm) for the Five (5) Test Locations for each Gateway*" %}
 ## Results

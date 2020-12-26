@@ -85,7 +85,7 @@ analytics:
 # Site Author
 author:
   name             : "Jason N Kabi"
-  avatar           : "/assets/img/20201108_181158.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/img/20201224_124247.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Electrical Engineer / Data Scientist "
   location         : "Nyeri, Kenya"
   email            :
