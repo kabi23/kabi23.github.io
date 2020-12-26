@@ -27,7 +27,7 @@ This refers to the signal power that is received in milliwatts (mW), and it is m
 For our radio mapping experiments, we computed the mean RSSI for each of the 5 test locations that were used.  At approximately 150m away from the gateway, the LORIX One gateway outperformed the Kerlink gateway by a margin of 10dBm as well as at the furthest distance (approximately 7.5km) by 13dBm dBm. The best strength was realized at the nearest test location and reduced as we moved to test locations far away from the gateway, as depicted by Figure 6.
 {% include figure image_path="assets/img/radio/pp7.PNG" alt="*Fig 6: The Received Strength Plots for the 5 Test Locations.*" caption="*Fig 6: The Received Strength Plots for the 5 Test Locations.*" %}
 Plots in Figure 5 provides a quick graphical examination of the RSSI for each of five (5) test locations for each gateway. Outlier RSSIs were highly realized in test location 2 and they are plotted as individual points, while none were realized at location 1 (nearest to the gateways). However, location 1 depicts the highest notable degree of dispersion (spread) and skewness for both gateways. There is a general non-linear variation of the median positions of the RSSI, usually determined by various parameters, which include free space loss, shadowing, reflection and transmission, diffraction, among others.
-## Acknowledgements
+## Acknowledgement
 - Dr Ciira Wa Maina - Director, Centre for Data Science abnd Artificial Intelligence (DSAIL) - Dedan Kimathi University of Technology
 - Mr Nahshon Mokua - Dedan Kimathi University of Technology
 - Mr Wamae Mathenge - Dedan Kimathi University of Technology

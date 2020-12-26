@@ -40,7 +40,7 @@ In addition to sensor development, I have developed web applications for data vi
 
 {% include figure image_path="assets/img/oll6.PNG" alt="*Water-level anomaly detection and water level mean.*" caption="*Water-level anomaly detection and water level mean.*" %}
 
-## Acknowledgements
+## Acknowledgement
 I would like to thank William Njoroge and the management at Ol Pejeta for allowing me to test my systems at the conservancy and allowing me to use the Tech Lab to prepare and test our systems. I also thank the wardens at Ol Pejeta for help with the deployment. I thank ARM for support acquiring hardware and for technical support. Also, Stephen Wamae from DeKUT has been a great help during sensor development and deployment. I would also like to acknowledge TAHMO for allowing me to use their weather station data-streams.
 
 

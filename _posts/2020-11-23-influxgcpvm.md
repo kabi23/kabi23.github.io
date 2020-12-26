@@ -92,6 +92,6 @@ command : `nohup python ttn_to_db.py`
 - `show measurements`
 - `select * from "measurement on record"`
 
-## Acknowledgements
+## Acknowledgement
 Dr Ciira Wa Maina - Director, Centre for Data Science abnd Artificial Intelligence (DSAIL) - Dedan Kimathi University of Technology
 
