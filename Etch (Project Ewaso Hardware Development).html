@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jason Kabi</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- Bootstrap 4.5 CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="col-12 text-right">
+                <p><a href="email:jason.kabi@dkut.ac.ke">Email at: jason.kabi@dkut.ac.ke</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Bar -->
+
+
+    <!-- Navigation -->
+    <nav class="navbar bg-light navbar-light navbar-expand-lg">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="resume.html" class="nav-link">Resume</a></li>
+                    <li class="nav-item"><a href="blogs.html" class="nav-link">Blogs</a></li>
+                    <li class="nav-item"><a href="publications.html" class="nav-link">Publications</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div class="col-12 text-center mt-2">
+		<div class="row">
+			<div class="col-lg-12">
+				<img src="/img/nyiro7.jpg" class="img-fluid" alt="Responsive image">
+			</div>
+		</div>
+		<div class="border-top border-primary w-25 mx-auto my-3"></div>
+		<p class="lead"></p>
+	</div>
+    <!-- End Navigation -->
+
+
+    <!-- ======= Bioacoustics and Ecosystems Conservation ======= -->
+    <div id="blogs" class="blogs">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-2 ">
+                </div>
+
+
+                <div class="col-lg-8 text-center">
+                    <h2>
+                        Etch (Project Ewaso Hardware Development)
+                    </h2>
+
+
+                    <h3 class="text-justify"> Introduction</h3>
+
+                    <p class="text-justify">
+                        Etching is a subtractive method used for the production of etched circuit boards: acid is used to remove unwanted copper from a prefabricated laminate. 
+                        This is done by applying a temporary mask that protects parts of the laminate from the acid and leaves the desired copper layer untouched.
+                    </p>
+
+                    <p class="text-justify">
+                        Different machines and chemicals can be used for etching, which will affect the comfort, duration and quality of the result. 
+                        Two Acid types that can be used for etching are ferric chloride and Sodium Per-sulphate. Although etching can also be done in
+                        simple plastic boxes, the quality of the results will improve when using a machine that controls temperature and constantly 
+                        keeps the fluids in motion. There are small etching tanks with heating and air pump and there are small spray etching machines 
+                        which can handle bigger PCBs and even the development and cleaning processes involved. The sprayer also decreases the etching 
+                        time and the amount of acid needed.
+                    </p>
+                    <h3 class="text-justify">Etching process</h3>
+                    <br></br>
+                    <h4 class="text-justify">1. Designing the circuit board and producing a pdf of the design.</h4>
+
+                    <p class="text-justify">
+                        I design the circuit board shown below using KiCad. KiCad is a free software suite for electronic design automation (EDA).
+                        It facilitates the design of schematics for electronic circuits and their conversion to PCB designs.
+                        Check out these KiCad Tutorials. After designing the boards, I produced a pdf of the designs and printed the pieces 
+                        on A4 papers with toner (photograph papers(mate)) so as to facilitate the next step in the process.
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img src="/img/oll7.PNG" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
+                    <br></br>
+                    <p class="font-italic text-center"> Circuit layers(Left: prototype 1 - layout, Right: prototype 2 - layout(includes footprints of some power analysis sensors)).</p>
+                    <br></br>
+
+                    <h4 class="text-justify">2. Direct Toner Transfer.</h4>
+
+                    <p class="text-justify">
+                        The circuit layout is printed with a laser printer on paper (with toner (photograph paper)), put face-down on the laminate, 
+                        and the toner is transferred from the paper to the copper using an iron. The print must be of a very good quality, little 
+                        mistakes we usually tend to ignore in printed text can result in unusable traces or even cause short circuits. 
+                        The transfer of the toner is a bit tricky as well. If temperature is too high, the toner gets too liquid and the tracks 
+                        will blur. If the temperature is too low, the toner won’t stick to the copper. After the ironing you can’t pull the paper 
+                        away just like that, without destroying half of the mask. Instead you have to put the laminate with the paper in a water 
+                        bath and wait a while until you can start to cautiously scrub away the paper.
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img src="/img/oll8.PNG" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
+                    <br></br>
+                    <p class="font-italic text-center"> Left: Circuit layout on the copper board/laminate after the transfer from the paper, Right: Etching with Aluminum III Chloride (AlCl3).</p>
+                    <br></br>
+
+                    <h4 class="text-justify">3. Etching.</h4>
+                    <p class="text-justify">
+                        <b>⚠ CAUTION :Wear Protective Equipment when handling etching chemicals(Ferric Chloride and Sodium Per-sulphate) (eye protection and hand gloves)</b>
+                        <ol>
+                            <li>Put the board in the acid tank for about 20 minutes until the copper traces are completely etched. You can tell that it’s finished when the board turns from opaque pink to transparent yellow (depends on the type of board you are using).</li>
+                            <li>Move the board into the rinse tank for a few seconds. You can also use an Isopropanol spray.</li>
+                            <li>Dry the board with a cloth.</li>
+                        </ol>
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img src="/img/oll10.PNG" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
+                    <br></br>
+                    <p class="font-italic text-center"> Etching (a little stiring is required).</p>
+                    <br></br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img src="/img/oll9.PNG" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
+                    <br></br>
+                    <p class="font-italic text-center"> Left : Final product, Right: after placing the components.</p>
+                    <br></br>
+
+                    <h4 class="text-justify">4. Drilling.</h4>
+                    <p class="text-justify">
+                        Drilling of the desired drill holes is done carefully so as not to scratch the copper tracks using the drill bit.
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img src="/img/oll11.PNG" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
+                    <br></br>
+                    <p class="font-italic text-center"> Drilling.</p>
+                    <br></br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img src="/img/oll12.PNG" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
+                    <br></br>
+                    <p class="font-italic text-center"> Final product after drilling.</p>
+                    <br></br>
+
+                    <h4 class="text-justify">5. Project Ewaso prototypes(Prototype one and two ).</h4>
+                    <p class="text-justify">
+                        After soldering / placing the components.
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img src="/img/oll13.PNG" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
+                    <br></br>
+                    <p class="font-italic text-center"> Prototype 1 & 2.</p>
+                    <br></br>
+
+                    <h3 class="text-justify">Disadvantages of Etched Circuit Boards (Why etched boards are inferior to printed boards).</h3>
+                    <p class="text-justify">
+                        <ol>
+                            <li>The main disadvantage is, only the front and back copper layers can be etched the other important layers e.g.: the solder mask layer, 
+                                the silk-screen layer,the paste layer etc. cannot be etched because they would appear as short circuits on the board.</li>
+                            <li>The other disadvantage is since the solder mask layer cannot be etched, it becomes difficult to use surface mount components (SMT, SMD). 
+                                The solder mask layer is a very important layer because it is used to mount all surfaces mount components, the layer act as a link between 
+                                the component leads and the copper footprint/track.</li>
+                            <li>Since drilling is done by hand in most etching cases the drilling precision is very poor. For printed circuit boards the drilling is done
+                                by a robot so the precision is very high.</li>
+                            <li>The other disadvantage is, double-sided board etching is quite hectic at the direct toner transfer stage. The transfer is done manually 
+                                hence the etched product is prone to positioning errors between the front copper layer and the back copper layer.</li>
+                            <li>Since the etched copper tracks are exposed to stress and various damaging elements (corrosion) they do not last long as compared to the 
+                                printed tracks.</li>
+                            <li>The etched copper tracks are not scratch resistance which is a problem when it comes to drilling and deployment of the final etched product.</li>
+                            <li>For a LOW PROFILE QUAD FLAT PACK (LPQF) microcontroller and microchip like the one shown below.</li>
+                            <br></br>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <img src="/img/oll14.PNG" class="img-fluid" alt="Responsive image">
+                                </div>
+                            </div>
+                            <br></br>
+                            <p class="font-italic text-center"> LOW PROFILE QUAD FLAT PACK (LPQF) microcontroller and microchip footprint.</p>
+                            <br></br>
+                            <li>As the pitch decreases (distance from the centre of one pad to the centre of the adjacent pad) it becomes difficult to etch the foot print 
+                                because the acid, in many cases do not get rid of the copper between the mounting pads. Such footprints can only be printed.</li>    
+                            <li>Lastly, high density circuit boards are difficult to etch because of reasons highlighted above.</li>
+                        </ol>
+                    </p>
+                    <h3 class="text-justify">Acknowledgement.</h3>
+                    <p class="text-justify">
+                        <ol>
+                            <li>Mr. Johnathan Njiiru (PCB FABRICATION LAB - Dedan Kimathi University of Technology (DeKUT)).</li>
+                            <li><a href="https://dekut-dsail.github.io/" target="_blank">Centre for Data Science and Artificial Intelligence (DSAIL)</a>, 
+                                <a href="https://www.dkut.ac.ke/" target="_blank">Dedan Kimathi University of Technology</a></li>   
+                        </ol>
+                    </p>
+
+                </div>
+
+                <div class="col-lg-2">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- End Bioacoustics and Ecosystems Conservation -->
+
+    <!-- Start Jumbotron -->
+    <div class="jumbotron py-4 mb-0 mt-2 ">
+
+    </div>
+    <!-- End Jumbotron -->
+
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="row text-light text-center py-2 justify-content-center">
+                <div class="col-sn-10 col-md-8 col-lg-6">
+                    <h4>
+                        Quick Links
+                    </h4>
+                    <div class="border-top border-white w-25 mx-auto my-3"></div>
+                    <p>
+                        <a href="https://www.dkut.ac.ke/">Dedan Kimathi University of Technology</a>
+                    </p>
+                    <p><a href="https://www.dkut.ac.ke/">Centre for Data Science and Artificial Intelligence</a></p>
+                    <ul class="social pt-3">
+                        <li><a href="https://www.linkedin.com/in/kabi-jason-b14b68164/" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/kabi23" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- End Footer -->
+
+
+    <!-- Start Socket -->
+    <div class="socket text-light text-center py-3">
+        <p>&copy; <a href="https://kabi23.github.io" target="_blank">kabi23.github.io</a></p>
+    </div>
+
+    <!-- End Socket -->
+
+
+
+    <!-- End Socket -->
+
+
+
+    <!-- Script Source Files -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap 4.5 JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="js/all.min.js"></script>
+
+    <!-- End Script Source Files -->
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jason Kabi</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- Bootstrap 4.5 CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="col-12 text-right">
+                <p><a href="email:jason.kabi@dkut.ac.ke">Email at: jason.kabi@dkut.ac.ke</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Bar -->
+
+
+    <!-- Navigation -->
+    <nav class="navbar bg-light navbar-light navbar-expand-lg">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="resume.html" class="nav-link">Resume</a></li>
+                    <li class="nav-item"><a href="blogs.html" class="nav-link">Blogs</a></li>
+                    <li class="nav-item"><a href="publications.html" class="nav-link">Publications</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="col-12 text-center mt-2">
+		<div class="row">
+			<div class="col-lg-12">
+				<img src="/img/dat2.png" class="img-fluid" alt="Responsive image">
+			</div>
+		</div>
+		<div class="border-top border-primary w-25 mx-auto my-3"></div>
+		<p class="lead"></p>
+	</div>
+
+    <!-- End Navigation -->
+
+
+    <!-- ======= Bioacoustics and Ecosystems Conservation ======= -->
+    <div id="blogs" class="blogs">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-2 ">
+                </div>
+
+
+                <div class="col-lg-8 text-center">
+                    <h2>
+                        GCP-InfluxDB.
+                    </h2>
+
+
+                    <h3 class="text-justify"> Introduction.</h3>
+
+                    <p class="text-justify">
+                        The following are brief steps on how to setup / launch an InfluxDB Virtual Machine on GCP 
+                        (Google Cloud Platform), install python 3.7 on it and run a python script that queries the 
+                        data from an IOT Network server like TTN (The Things Network).
+                    </p>
+
+                    <h3 class="text-justify"> Pre-Requisites / Requirements.</h3>
+                    <p class="text-justify">
+                        <ol>
+                            <li>A Google Cloud Platform (GCP) account with access to the GCP Marketplace and Credit.</li>
+                            <li>Access to GCP Cloud Shell or the Gcloud SDK and command line tools.</li>
+                        </ol>
+                    </p>
+
+                    <h3 class="text-justify"> Deployment Steps.</h3>
+                    <br></br>
+                    <h4 class="text-justify">1. Create a project.</h4>
+
+                    <p class="text-justify">
+                        Create a project on GCP - where you will deploy the InfluxDB Virtual Machine instance.
+                    </p>
+
+                    <h4 class="text-justify">2. Deploying the InfluxDB Virtual Machine Instance.</h4>
+
+                    <p class="text-justify">
+                        To deploy an InfluxDB instance log into your Google Cloud Platform account and navigate to InfluxDB in the GCP 
+                        marketplace using the links provided: <code> GCP CONSOLE - COMPUTE ENGINE - GCP MARKETPLACE - DATABASES - InfluxDB Virtual Machine (VM)</code>
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img src="/img/inf1.PNG" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
+                    <br></br>
+                    <p class="font-italic text-center"> Fig 1: Launch Page.</p>
+                    <br></br>
+                    <p class="text-justify">
+                        After clicking on the launch button, you wil be prompted to customize the InfluxDB virtual machine to be launched.
+                        (Customization can be done or you can lauch it as it is)
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img src="/img/inf2.PNG" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
+                    <br></br>
+                    <p class="font-italic text-center"> Fig 2 : Deployment Page.</p>
+                    <br></br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img src="/img/inf3.PNG" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
+                    <br></br>
+                    <p class="font-italic text-center"> Fig 3 : Deployment Page.</p>
+                    <br></br>
+                    <p class="text-justify">
+                        Name the instance and click deploy. Copy the instance password, username and IP address provide to a text document for storage.
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img src="/img/inf4.PNG" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
+                    <br></br>
+                    <p class="font-italic text-center"> Fig 4 : Deployment Page.</p>
+                    <br></br>
+                    <p class="text-justify">
+                        After deployment, click on GCP external address and change the status of the InfluxDB VM instance to static. After setting up 
+                        the static IP address, you can access the VM instance using the SSH protocal. (The SSH protocol (also referred to as Secure Shell) 
+                        is a method for secure remote login from one computer to another. It provides several alternative options for strong authentication, 
+                        and it protects the communications security and integrity with strong encryption).
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img src="/img/vm1.PNG" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
+                    <br></br>
+                    <p class="font-italic text-center"> Fig 5 : Deployment Page.</p>
+                    <br></br>
+
+                    <h4 class="text-justify">3. Python 3.7 Installation.</h4>
+                    <p class="text-justify">
+                        The next step after accessing the instance is to install python (to enable querying of data from an IoT network server)in 
+                        the said instance. To make this possible python 3.7 with pip is needed and its installation can be achieved by running the 
+                        following commands consecutively:
+                        <ol>
+                            <li><code>sudo apt update</code></li>
+                            <li><code>sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev curl</code></li>
+                            <li><code>mkdir /tmp/Python37</code></li>
+                            <li><code>cd /tmp/Python37</code></li>
+                            <li><code>curl -O https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz</code></li>
+                            <li><code>tar -xf Python-3.7.3.tar.xz</code></li>
+                            <li><code>cd /tmp/Python37/Python-3.7.3</code></li>
+                            <li><code>./configure --enable-optimizations</code></li>
+                            <li><code>nproc</code>to know the number of cores) in my case servers core</li>
+                            <li>hence   <code>make -j 1</code>  (2- represents the number of cores)</li>
+                            <li><code>sudo make altinstall</code>  (installation after building the binaries)</li>
+                            <li><code>python3.7 --version</code>  (verifying your installation)</li>
+                        </ol>
+                    </p>
+
+                    <h4 class="text-justify">4. Virtual Environment Creation.</h4>
+                    <p class="text-justify">
+                        If the querying-mqtt python script is located on Github you can follow the following commmands. An example of a TTN (The Things network)
+                        - InfluxDB querying script can be accessed at Ciira WA Maina Github - ttn_to_db.py. The requirements to run the script at Ciira WA Maina Github - requirements.txt.
+                        <ol>
+                            <li>Access the python folder path:    <code>cd /tmp/Python37/Python-3.7.3</code></li>
+                            <li>git installation:    <code>sudo apt-get install git</code></li>
+                            <li>Cloning a repo with the   <code>Querying script</code>and<code>requirements.txt</code>Cloning (Example)<code>git clone https://github.com/username/gcp-scripts.git</code></li>
+                            <li>Access the cloned repo :   <code>cd gcp-scripts/</code></li>
+                        </ol>
+                        If the querying script and requirement.txt are on your localhost you can create duplicates on the Virtual Machine and then copy the content
+                         from your localhost and paste it.Procedure (<code>touch ttn_to_db.py</code> , <code>nano ttn_to_db.py</code> , copy the code from the python file in your local host 
+                         and paste them on to the terminal. , press (cntrl+O) to save, then enter and lastly press (cntrl+x) to exit the terminal) and 
+                         (<code>touch requirements.txt</code>, <code>touch requirements.txt</code>, copy the requirements.txt from the text file in your local host and paste them on to the terminal, 
+                         press (cntrl+O) to save, then enter and lastly press (cntrl+x) to exit the terminal): (NB THE SAME COMMANDS CAN BE USED TO EDIT THE SCRIPTS = nano ttn_to_db.py TO OPEN )
+                         <ol>
+                            <li>Virtual environment creation:   <code>python3.7 -m venv venv-query</code></li>
+                            <li>Activation of the virtual environment:  <code>source venv-query/bin/activate</code></li>
+                            <li>Installation of the requirements:  <code>pip install -r requirements.txt</code></li>
+                        </ol>
+                    </p>
+
+                    <h4 class="text-justify">5. Querying and database creation.</h4>
+                    <p class="text-justify">
+                        <ol>
+                            <li>Before executing the querying script below are changes to be made:
+                                <ul>
+                                    <li><code>app_id = "TTN / network server application id"</code></li>
+                                    <li><code>access_key = "TTN / application access key "</code></li>
+                                </ul>
+                            </li>
+                            <li>Key in the InfluxDB virtual machine credentials as shown in the code snippet below:
+                                <ul>
+                                    <li><code>db_client = InfluxDBClient(host='instance external IP address', port=8086, username='instance username', password='instance password', ssl=True)</code></li>
+                                    <li><code>db_client.create_database('database name')</code></li>
+                                    <li><code>db_client.switch_database('database name')</code></li>
+                                    <li><code>def uplink_callback(msg, client):</code></li>
+                                </ul>
+                            </li> 
+                            <li>Key in the gateway identification (In this case a registered LoRa gateway)
+                                <ul>
+                                    <li><code>GTW_IDS = ['gateway1', 'gateway2', 'gateway3', 'gateway4'] # gateway of interest</code></li>
+                                </ul>
+                            </li>  
+                        </ol>
+                        After making the changes the script should be ready for execution using Nohup. Nohup , short form for “No Hung Up”, is a command in Linux systems thata keep processes running 
+                        even after exiting the Shell or terminal. In this case, Nohup will enable the script to continuously query the data from TTN (automation),hence, the moment a device sends sensor
+                        data to the TTN it is recorded in the Influx database. command : <code>nohup python ttn_to_db.py</code>
+                    </p>
+
+                    <h4 class="text-justify">6. Database Access.</h4>
+                    <p class="text-justify">
+                        <ol>
+                            <li>Database access:   <code>influx -ssl -unsafeSsl -username 'instance username' -password 'instance password'</code></li>
+                            <li><code>show databases</code></li>
+                            <li><code>use database name</code></li>
+                            <li><code>show measurements</code></li>
+                            <li><code>select * from "measurement on record"</code></li>
+                        </ol>   
+                    </p>
+                    <h4 class="text-justify">7. Acknowledgement.</h4>
+                    <p class="text-justify">
+                        Dr Ciira Wa Maina - Director, Centre for Data Science abnd Artificial Intelligence (DSAIL) - Dedan Kimathi University of Technology 
+                    </p>
+                </div>
+
+                <div class="col-lg-2">
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- End Bioacoustics and Ecosystems Conservation -->
+
+    <!-- Start Jumbotron -->
+    <div class="jumbotron py-4 mb-0 mt-2 ">
+
+    </div>
+    <!-- End Jumbotron -->
+
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="row text-light text-center py-2 justify-content-center">
+                <div class="col-sn-10 col-md-8 col-lg-6">
+                    <h4>
+                        Quick Links
+                    </h4>
+                    <div class="border-top border-white w-25 mx-auto my-3"></div>
+                    <p>
+                        <a href="https://www.dkut.ac.ke/">Dedan Kimathi University of Technology</a>
+                    </p>
+                    <p><a href="https://www.dkut.ac.ke/">Centre for Data Science and Artificial Intelligence</a></p>
+                    <ul class="social pt-3">
+                        <li><a href="https://www.linkedin.com/in/kabi-jason-b14b68164/" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/kabi23" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- End Footer -->
+
+
+    <!-- Start Socket -->
+    <div class="socket text-light text-center py-3">
+        <p>&copy; <a href="https://kabi23.github.io" target="_blank">kabi23.github.io</a></p>
+    </div>
+
+    <!-- End Socket -->
+
+
+
+    <!-- End Socket -->
+
+
+
+    <!-- Script Source Files -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap 4.5 JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="js/all.min.js"></script>
+
+    <!-- End Script Source Files -->
+</body>
+
+</html>
